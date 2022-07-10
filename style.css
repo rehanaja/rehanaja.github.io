@@ -201,3 +201,42 @@ button {
 .grow-small {
     transform: scale(2);
 }
+
+
+/* Responsive Media */
+@media (max-width: 1140px) {
+    nav {
+        padding-top: 30px;
+        padding-right: 6%;
+        padding-left: 6%;
+    }
+    .text h1 {
+        font-size: 60px;
+    }
+    .text button {
+        font-size: 15px;
+    }
+    .main-img {
+        width: 30%;
+        height: 85%;
+    }
+}
+
+@media (max-width: 720px) {
+    nav ul {
+        display: none;
+    }
+
+    .text {
+        left: 50%;
+        transform: translate(-50%,-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .main-img img {
+        display: none;
+    }
+}
